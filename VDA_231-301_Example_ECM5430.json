@@ -1,0 +1,1290 @@
+{
+  "_id": "00000000-0000-0000-0000-000000000000",
+  "_type": "TestReport",
+  "$schema": "https://[TODO_SCHEMA_URL]/VDA_231-301_V1.0_Schema_Generic.json",
+  "ClientOrderNumber": "75034211 - 213234422 - version B",
+  "LaboratoryOrderNumber": "334233421334",
+  "OrderReference": "BR167 // DBL 5471.09",
+  "OrderDate": {
+    "Date": "2023-10-05"
+  },
+  "ReportDate": {
+    "Date": "2023-10-30"
+  },
+  "Client": {
+    "_id": "00000000-0000-0000-0000-000000000000",
+    "_type": "Location",
+    "Name": "Generic Automotive Company",
+    "DUNS": "006620342"
+  },
+  "Contractor": {
+    "_id": "00000000-0000-0000-0000-000000000000",
+    "_type": "TestingCenter",
+    "Location": {
+      "_id": "00000000-0000-0000-0000-000000000000",
+      "_type": "Location",
+      "Name": "Testlab GmbH",
+      "DUNS": "180945476",
+      "Address": {
+        "_id": "dd317ad2-70a8-4e92-be06-eb1f8d3e4bd1",
+        "_type": "ContactDetails",
+        "Phone": "+49 222 333 444",
+        "Fax": "+49 222 333 445",
+        "EMail": "info@testlab.com"
+      }
+    },
+    "TestingManager": {
+      "_id": "00000000-0000-0000-0000-000000000000",
+      "_type": "Person",
+      "FirstName": "John",
+      "LastName": "Doe",
+      "DUNS": "180945476",
+      "ID-Number": "9827398732",
+      "EMail": "john.doe@testlab.com"
+    },
+    "Certifications": [
+      {
+        "_id": "00000000-0000-0000-0000-000000000000",
+        "_type": "Certification",
+        "Regulation": {
+          "Authority": "DIN",
+          "Type": "DIN EN ISO/IEC",
+          "Number": "17025",
+          "IssueDate": "2018-03"
+        },
+        "AccreditationDate": {
+          "Date": "2019-11-01"
+        },
+        "ValidUntil": {
+          "Date": "2024-11-01"
+        }
+      },
+      {
+        "_id": "00000000-0000-0000-0000-000000000000",
+        "_type": "Certification",
+        "Regulation": {
+          "Authority": "Manufacturer",
+          "Type": "BQF ECM",
+          "IssueDate": "2019-01",
+          "Number": "1001"
+        },
+        "AccreditationDate": {
+          "Date": "2019-11-01"
+        }
+      }
+    ]
+  },
+  "Components": [
+    {
+      "_id": "db218846-88c1-4cdb-a9b2-76925b1d6884",
+      "_type": "Component",
+      "Designation": "Part 4711",
+      "PartNumber": "X1234567890"
+    }
+  ],
+  "TestSeries": [
+    {
+      "_id": "00000000-0000-0000-0000-000000000000",
+      "_type": "TestSeries",
+      "PredecessorId": null,
+      "SuccessorId": null,
+      "Regulation": {
+        "Type": "VDA",
+        "Number": "270",
+        "IssueDate": "2022-05",
+        "Title": "Odor test",
+        "Features": "Variant 3B"
+      },
+      "NumberOfExecutions": 1,
+      "TestingCenter": {
+        "_id": "00000000-0000-0000-0000-000000000000",
+        "_type": "TestingCenter",
+        "Location": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "Location",
+          "Name": "Testlab GmbH",
+          "DUNS": "180945476",
+          "Address": {
+            "_id": "7854f7d9-b651-40f8-b480-18101d83c9d7",
+            "_type": "ContactDetails",
+            "Phone": "+49 222 333 444",
+            "Fax": "+49 222 333 445",
+            "EMail": "info@testlab.com"
+          }
+        },
+        "TestingManager": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "Person",
+          "FirstName": "John",
+          "LastName": "Doe",
+          "DUNS": "180945476",
+          "ID-Number": "5354435453",
+          "EMail": "john.doe@testlab.com"
+        },
+        "Certifications": [
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Regulation": {
+              "Authority": "DIN",
+              "Type": "DIN EN ISO/IEC",
+              "Number": "17025",
+              "IssueDate": "2018-03"
+            },
+            "AccreditationDate": {
+              "Date": "2019-11-01"
+            },
+            "ValidUntil": {
+              "Date": "2024-11-01"
+            }
+          },
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Regulation": {
+              "Authority": "Manufacturer",
+              "Type": "BQF ECM",
+              "IssueDate": "2019-01",
+              "Number": "1001"
+            },
+            "AccreditationDate": {
+              "Date": "2019-11-01"
+            }
+          }
+        ]
+      },
+      "Executions": [
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "TestExecution",
+          "Numerator": 1,
+          "Specimen": {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Specimen",
+            "Designation": "14345 // ffsfhhsjhf jsf // adüö // asddas // C323524324323",
+            "ComponentID": "db218846-88c1-4cdb-a9b2-76925b1d6884",
+            "Flagging": "Test specimen according to attachment",
+            "Attachment": {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "Attachment",
+              "FileName": "sample_vda270.jpg",
+              "MimeType": "application/jpeg",
+              "Encoding": "base64",
+              "Hashes": [
+                {
+                  "Type": "md5",
+                  "Value": "b3650c44f580b14995bd77284a9dda8d"
+                }
+              ],
+              "Designation": "Specimen A",
+              "Data": "JVBERi0xLjQNJeLjz9MNCjQxIDAgb2JqDTw8L0xpbmVhcml6ZWQ="
+            },
+            "ProcessHistory": [
+              {
+                "_id": "96410e2e-4437-4e38-8cca-3de62cac5cc9",
+                "_type": "ProcessStep",
+                "Index": 1,
+                "Regulation": {
+                  "Authority": "ISO",
+                  "Number": "DIN EN ISO 291",
+                  "IssueDate": "2008-08",
+                  "Title": "Normal climate",
+                  "Features": "23/50",
+                  "Type": ""
+                },
+                "ProcessData": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "InformationSet",
+                  "Designation": "Preconditioning",
+                  "Attributes": [
+                    {
+                      "Property": "Duration",
+                      "Unit": "d",
+                      "Value": 7
+                    },
+                    {
+                      "Property": "EndDate",
+                      "Value": {
+                        "Date": "2023-09-25"
+                      }
+                    },
+                    {
+                      "Property": "Temperature",
+                      "Unit": "degreeC",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        22,
+                        {
+                          "MinTolerance": -2,
+                          "MaxTolerance": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "Rel. Humidity",
+                      "Unit": "%",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        47,
+                        {
+                          "MinTolerance": -10,
+                          "MaxTolerance": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "_type": "ProcessStep",
+                "_id": "7c2a9315-5e1b-49e9-af0f-b3eb5cda1ebc",
+                "Index": 2,
+                "Regulation": {
+                  "Authority": "VDA",
+                  "IssueDate": "2022-05",
+                  "Title": "Odor test",
+                  "Features": "Variant 3B",
+                  "Type": "VDA",
+                  "Number": "270"
+                },
+                "ProcessData": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "InformationSet",
+                  "Designation": "Preconditioning",
+                  "Attributes": [
+                    {
+                      "Property": "Duration",
+                      "Unit": "min",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        120,
+                        {
+                          "MinTolerance": -10,
+                          "MaxTolerance": 10
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "EndDate",
+                      "Value": {
+                        "Date": "2023-09-25"
+                      }
+                    },
+                    {
+                      "Property": "Temperature",
+                      "Unit": "°C",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        80,
+                        {
+                          "MinTolerance": -2,
+                          "MaxTolerance": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "AmountOfWaterInTestVessel",
+                      "Unit": "ml",
+                      "Value": 0
+                    }
+                  ]
+                }
+              }
+            ],
+            "AdditionalProperties": {
+              "Attributes": [
+                {
+                  "Property": "VolumeOfTestVessel",
+                  "Unit": "l",
+                  "Value": 1
+                }
+              ]
+            }
+          },
+          "MeasurementSystems": [],
+          "RawData": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "InformationSet",
+              "Designation": "Odor test result",
+              "Attributes": [
+                {
+                  "Property": "Odor profile (qualitative)",
+                  "Value": "roasted / burnt"
+                }
+              ],
+              "ArraySpec": [
+                {
+                  "Property": "Tester number"
+                },
+                {
+                  "Property": "Result",
+                  "Unit": "Grade"
+                }
+              ],
+              "ArrayValue": [
+                [
+                  1,
+                  3.5
+                ],
+                [
+                  2,
+                  3.5
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            }
+          ],
+          "SingleResults": [
+            {
+              "_id": "ee6e84bc-b571-4676-a822-a8af906a3ca0",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "dda5b902-63df-4913-9224-111111111111",
+              "Property": "Odor result",
+              "Unit": "Grade",
+              "Value": 3.0
+            },
+            {
+              "_id": "1aecca46-563b-41b9-bdeb-70440dcb3bb2",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "dda5b902-63df-4913-9224-111111111111",
+              "Property": "Odor result",
+              "Unit": "Grade",
+              "Value": 3.5
+            },
+            {
+              "_id": "61cb05a3-5ad8-4dff-97b6-6f38eeaf5245",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "dda5b902-63df-4913-9224-111111111111",
+              "Property": "Odor result",
+              "Unit": "Grade",
+              "Value": 4.0
+            },
+            {
+              "_id": "d5f57d44-4b4b-4605-8023-c677add46d4b",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "66d4c362-4784-4bd2-a988-222222222222",
+              "Property": "Odor profile",
+              "Value": "Roasted / burnt",
+              "LocalizedText": "geröstet / verbrannt"
+            }
+          ],
+          "RegulationDesignation": "TODO"
+        }
+      ],
+      "ConsolidatedCharacteristicValues": [
+        {
+          "_id": "dda5b902-63df-4913-9224-111111111111",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Variable/Quantitative",
+          "Property": "Odor result",
+          "Unit": "Grade",
+          "Value": 3.5,
+          "Aggregation": "Mean value",
+          "Rounding": "According to regulation",
+          "RoundingAccuracy": 1,
+          "ValueResolution": 0.5
+        },
+        {
+          "_id": "66d4c362-4784-4bd2-a988-222222222222",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Qualitative",
+          "Property": "Odor profile",
+          "Value": "roasted / burnt",
+          "LocalizedText": "geröstet / verbrannt",
+          "Aggregation": "None"
+        }
+      ]
+    },
+    {
+      "_id": "00000000-0000-0000-0000-000000000000",
+      "_type": "TestSeries",
+      "PredecessorId": null,
+      "SuccessorId": null,
+      "Regulation": {
+        "Authority": "VDA",
+        "Type": "VDA",
+        "Number": "278",
+        "IssueDate": "2016-05",
+        "Title": "Thermal desorption-GC-MSD"
+      },
+      "NumberOfExecutions": 2,
+      "Assessment": "Substances have been identified that are listed in the CLP Regular and/or GADSL list. In total there are: styrene, phenol, Phenol, 2,4-bis(1,1-dimethylethyl)-, ethylbenzene",
+      "TestingCenter": {
+        "_id": "00000000-0000-0000-0000-000000000000",
+        "_type": "TestingCenter",
+        "Name": "Testlab GmbH",
+        "DUNS": "234974920",
+        "ContactDetails": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ContactDetails",
+          "Phone": "+49 222 333 444",
+          "Fax": "+49 222 333 445",
+          "EMail": "info@testlab.com"
+        },
+        "TestingManager": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "TestingManager",
+          "FirstName": "John",
+          "LastName": "Doe",
+          "DUNS": "989737410",
+          "ID-Number": "9201098309",
+          "EMail": "john.doe@testlab.com"
+        },
+        "Certifications": [
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Authority": "ISO",
+            "Number": " 17025",
+            "AccreditationDate": "2019/11",
+            "ValidUntil": "2024/11"
+          },
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Authority": "Manufacturer",
+            "Number": "1001",
+            "AccreditationDate": "2019/11"
+          }
+        ]
+      },
+      "Executions": [
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "Execution",
+          "Numerator": 1,
+          "Specimen": {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Specimen",
+            "Designation": "VOC / FOG sample",
+            "ComponentID": "db218846-88c1-4cdb-a9b2-76925b1d6884",
+            "Flagging": "Test specimen according to attachment",
+            "Attachment": {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "Attachment",
+              "FileName": "sample_vda278.jpg",
+              "MimeType": "application/jpeg",
+              "Encoding": "base64",
+              "Hashes": [
+                {
+                  "Type": "md5",
+                  "Value": "b3650c44f580b14995bd77284a9dda8d"
+                }
+              ],
+              "Designation": "Specimen B",
+              "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+            },
+            "Extraction": {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "Extraction",
+              "Position": "See attachment",
+              "Method": "Drill core",
+              "Designation": "VDA 278 sample / thermodesorption sample",
+              "Attachment": {
+                "_id": "00000000-0000-0000-0000-000000000000",
+                "_type": "Attachment",
+                "FileName": "sample_extraction_b1.jpg",
+                "MimeType": "application/jpeg",
+                "Encoding": "base64",
+                "Hashes": [
+                  {
+                    "Type": "md5",
+                    "Value": "b3650c44f580b14995bd77284a9dda8d"
+                  }
+                ],
+                "Designation": "Specimen B FOC drill",
+                "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+              },
+              "Date": "2024-03-01",
+              "Timestamp": 1672531200
+            },
+            "ProcessHistory": [
+              {
+                "_type": "ProcessStep",
+                "Index": 1,
+                "Regulation": {
+                  "Authority": "VDA",
+                  "Designation": "VDA 278",
+                  "IssueDate": "2016-05",
+                  "Title": "Thermal desorption-GC-MSD"
+                },
+                "ProcessData": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "InformationSet",
+                  "Designation": "Preconditioning",
+                  "Attributes": [
+                    {
+                      "Property": "Duration",
+                      "Unit": "d",
+                      "Value": 7
+                    },
+                    {
+                      "Property": "EndDate",
+                      "Value": {
+                        "Date": "2023-10-16"
+                      }
+                    },
+                    {
+                      "Property": "Temperature",
+                      "Unit": "°C",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        23,
+                        {
+                          "MinTolerance": -2,
+                          "MaxTolerance": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "Rel. Humidity",
+                      "Unit": "%",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        50,
+                        {
+                          "MinTolerance": -10,
+                          "MaxTolerance": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "AdditionalProperties": []
+          },
+          "MeasurementSystems": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "MeasurementSystem",
+              "Designation": "GCMS",
+              "SystemType": "GC-AA01",
+              "Location": "Laboratory 1"
+            }
+          ],
+          "RawData": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "InformationSet",
+              "Designation": "VOC",
+              "Attributes": [
+                {
+                  "Property": "Method",
+                  "Text": "VDA278-VOC.M"
+                },
+                {
+                  "Property": "File name",
+                  "Text": "98798787989B.D"
+                },
+                {
+                  "Property": "Total emission value",
+                  "Unit": "µg/g",
+                  "Value": 39.1,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 1
+                },
+                {
+                  "Property": "Total emission value (second run)",
+                  "Unit": "µg/g",
+                  "Value": 25.9,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 1
+                },
+                {
+                  "Property": "Remark",
+                  "Text": "The following identified substances are listed in the Regulation (EC) No 1272/2008 (CLP-regulation) [Updated to ATP17\n(December 2021)] with Carcinogenicity, Germ cell mutagenicity; embryotoxic or Reproductive toxicity:\nstyrene, phenol\nThe following identified substances are listed in the Global Automotive Declarable Substance List (GADSL 02/01/2023) with D/P\nor D or P :\nstyrene, phenol , Phenol, 2,4-bis(1,1-dimethylethyl)- , ethylbenzene"
+                },
+                {
+                  "Property": "Sum of identified or assigned substances area",
+                  "Unit": "%",
+                  "Value": 55.20,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 2
+                },
+                {
+                  "Property": "Sum of identified or assigned substances emission",
+                  "Unit": "µg/g",
+                  "Value": 16.1,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 1
+                },
+                {
+                  "Property": "Vial Number",
+                  "Text": null
+                },
+                {
+                  "Property": "Classifications",
+                  "Value": {
+                    "000100-42-5": {
+                      "Regulations": [
+                        {
+                          "Regulation": "CLP",
+                          "Value": [
+                            "Repr. 2"
+                          ]
+                        },
+                        {
+                          "Regulation": "GADSL",
+                          "Value": [
+                            "D"
+                          ]
+                        }
+                      ]
+                    },
+                    "000108-95-2": {
+                      "Regulations": [
+                        {
+                          "Regulation": "CLP",
+                          "Value": [
+                            "Muta. 2"
+                          ]
+                        },
+                        {
+                          "Regulation": "GADSL",
+                          "Value": [
+                            "D"
+                          ]
+                        }
+                      ]
+                    },
+                    "000100-41-4": {
+                      "Regulations": [
+                        {
+                          "Regulation": "GADSL",
+                          "Value": [
+                            "D"
+                          ]
+                        }
+                      ]
+                    },
+                    "000096-76-4": {
+                      "Regulations": [
+                        {
+                          "Regulation": "GADSL",
+                          "Value": [
+                            "D"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "ArraySpec": [
+                {
+                  "Property": "Retention Time",
+                  "Unit": "min"
+                },
+                {
+                  "Property": "Substance name"
+                },
+                {
+                  "Property": "Legacy substance"
+                },
+                {
+                  "Property": "Mass fragments"
+                },
+                {
+                  "Property": "Main mass fragment"
+                },
+                {
+                  "Property": "Potential substance match"
+                },
+                {
+                  "Property": "CAS-Nr."
+                },
+                {
+                  "Property": "Area",
+                  "Unit": "%"
+                },
+                {
+                  "Property": "Emmision",
+                  "Unit": "µg/g"
+                },
+                {
+                  "Property": "Remark"
+                }
+              ],
+              "ArrayValue": [
+                [
+                  13.79,
+                  "chlorobenzene = MCB = phenylchloride",
+                  null,
+                  [
+                    112,
+                    77,
+                    114,
+                    51,
+                    50
+                  ],
+                  112,
+                  null,
+                  "000108-90-7",
+                  5.93,
+                  1.7,
+                  null
+                ],
+                [
+                  14.54,
+                  "ethylbenzene",
+                  [
+                    91,
+                    106,
+                    51,
+                    78,
+                    77
+                  ],
+                  91,
+                  null,
+                  "000100-41-4",
+                  4.19,
+                  1.2,
+                  null
+                ],
+                [
+                  16.02,
+                  "styrene",
+                  [
+                    104,
+                    103,
+                    78,
+                    51,
+                    77
+                  ],
+                  104,
+                  null,
+                  "000100-42-5",
+                  6.12,
+                  1.8,
+                  null
+                ]
+              ]
+            },
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "InformationSet",
+              "Designation": "FOG",
+              "Attributes": [
+                {
+                  "Property": "Method",
+                  "Value": "VDA278-FOG.M"
+                },
+                {
+                  "Property": "File name",
+                  "Value": "42029309843B.D"
+                },
+                {
+                  "Property": "Total emission value",
+                  "Unit": "µg/g",
+                  "Value": 2123,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 0
+                },
+                {
+                  "Property": "Remark",
+                  "Value": "The following identified substances are listed in the Regulation (EC) No 1272/2008 (CLP-regulation) [Updated to ATP17\n(December 2021)] with Carcinogenicity, Germ cell mutagenicity; embryotoxic or Reproductive toxicity:\n-none-\nThe following identified substances are listed in the Global Automotive Declarable Substance List (GADSL 02/01/2023) with D/P\nor D or P :\n-none-"
+                },
+                {
+                  "Property": "Sum of identified or assigned substances area",
+                  "Unit": "%",
+                  "Value": 113.40,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 2
+                },
+                {
+                  "Property": "Sum of identified or assigned substances emission",
+                  "Unit": "µg/g",
+                  "Value": 220.4,
+                  "Rounding": "Commercial",
+                  "RoundingAccuracy": 1
+                },
+                {
+                  "Property": "Vial Number",
+                  "Value": null
+                },
+                {
+                  "Property": "Classifications",
+                  "Value": {}
+                }
+              ],
+              "ArraySpec": [
+                {
+                  "Property": "Retention Time",
+                  "Unit": "min"
+                },
+                {
+                  "Property": "Substance name"
+                },
+                {
+                  "Property": "Legacy substance"
+                },
+                {
+                  "Property": "Mass fragments"
+                },
+                {
+                  "Property": "Main mass fragment"
+                },
+                {
+                  "Property": "Potential substance match"
+                },
+                {
+                  "Property": "CAS-Nr."
+                },
+                {
+                  "Property": "Area",
+                  "Unit": "%"
+                },
+                {
+                  "Property": "Emmision",
+                  "Unit": "µg/g"
+                },
+                {
+                  "Property": "Remark"
+                }
+              ],
+              "ArrayValue": [
+                [
+                  14.80,
+                  null,
+                  null,
+                  [
+                    57,
+                    71,
+                    43,
+                    85,
+                    124
+                  ],
+                  57,
+                  "alkane",
+                  null,
+                  0.46,
+                  1.1,
+                  null
+                ],
+                [
+                  15.19,
+                  "n-octadecane",
+                  null,
+                  [
+                    57,
+                    43,
+                    71,
+                    85,
+                    41
+                  ],
+                  57,
+                  null,
+                  "000593-45-3",
+                  0.57,
+                  1.3,
+                  null
+                ]
+              ]
+            }
+          ],
+          "SingleResults": [],
+          "RegulationDesignation": "",
+          "TestParameters": {}
+        }
+      ],
+      "ConsolidatedCharacteristicValues": [
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Variable/Quantitative",
+          "Designation": "VOC total emission value",
+          "Unit": "µg/g",
+          "AggregatedActualValue": 29.1,
+          "Aggregation": "None",
+          "Rounding": "Commercial",
+          "RoundingAccuracy": 1
+        },
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Variable/Quantitative",
+          "Designation": "VOC total emission value (second value)",
+          "Unit": "µg/g",
+          "AggregatedActualValue": 20.9,
+          "Aggregation": "None",
+          "Rounding": "Commercial",
+          "RoundingAccuracy": 1
+        },
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Variable/Quantitative",
+          "Designation": "FOG total emission value",
+          "Unit": "µg/g",
+          "AggregatedActualValue": 238,
+          "Aggregation": "None",
+          "Rounding": "Commercial",
+          "RoundingAccuracy": 1
+        }
+      ]
+    },
+    {
+      "_id": "00000000-0000-0000-0000-000000000000",
+      "_type": "TestSeries",
+      "PredecessorId": null,
+      "SuccessorId": null,
+      "Regulation": {
+        "Authority": "DIN",
+        "Designation": "DIN 75201",
+        "IssueDate": "2011-11",
+        "Title": "Fogging (gravimetric)",
+        "Features": "Variant B"
+      },
+      "NumberOfExecutions": 2,
+      "TestingCenter": {
+        "_id": "00000000-0000-0000-0000-000000000000",
+        "_type": "TestingCenter",
+        "Name": "Testlab GmbH",
+        "DUNS": "180387197",
+        "ContactDetails": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ContactDetails",
+          "Phone": "+49 222 333 444",
+          "Fax": "+49 222 333 445",
+          "EMail": "info@testlab.com"
+        },
+        "TestingManager": {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "TestingManager",
+          "FirstName": "John",
+          "LastName": "Doe",
+          "DUNS": "131232321",
+          "ID-Number": "963dc65a",
+          "EMail": "john.doe@testlab.com"
+        },
+        "Certifications": [
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Authority": "ISO",
+            "Number": "17025",
+            "AccreditationDate": "2019/11",
+            "ValidUntil": "2024/11"
+          },
+          {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Certification",
+            "Authority": "Manufacturer",
+            "Number": "1001",
+            "AccreditationDate": "2019/11"
+          }
+        ]
+      },
+      "Executions": [
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "Execution",
+          "Numerator": 1,
+          "Specimen": {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Specimen",
+            "Designation": "453 // äafäöfkdklfks // fda // sSff // A3422432343",
+            "Flagging": "Test specimen according to attachment",
+            "Attachment": {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "Attachment",
+              "FileName": "sample_fogging_f1.jpg",
+              "MimeType": "application/jpeg",
+              "Encoding": "base64",
+              "Hashes": [
+                {
+                  "Type": "md5",
+                  "Value": "b3650c44f580b14995bd77284a9dda8d"
+                }
+              ],
+              "Designation": "Specimen F1",
+              "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+            },
+            "ProcessHistory": [
+              {
+                "_type": "ProcessStep",
+                "Index": 1,
+                "Regulation": {
+                  "Authority": "ISO",
+                  "Designation": "ISO 291",
+                  "IssueDate": "2008-08",
+                  "Title": "Normal climate",
+                  "Features": "23/50"
+                },
+                "ProcessData": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "InformationSet",
+                  "Designation": "Preconditioning",
+                  "Attributes": [
+                    {
+                      "Property": "Duration",
+                      "Unit": "d",
+                      "Value": 1
+                    },
+                    {
+                      "Property": "EndDate",
+                      "Value": {
+                        "Date": "2023-09-25"
+                      }
+                    },
+                    {
+                      "Property": "Temperature",
+                      "Unit": "°C",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        23,
+                        {
+                          "MinTolerance": -2,
+                          "MaxTolerance": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "Rel. Humidity",
+                      "Unit": "%",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        50,
+                        {
+                          "MinTolerance": -10,
+                          "MaxTolerance": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "AdditionalProperties": [
+            ],
+            "Extractions": [
+              {
+                "_id": "00000000-0000-0000-0000-000000000000",
+                "_type": "Extraction",
+                "Position": "See attachment",
+                "Method": "Cutting",
+                "Designation": "Fogging sample",
+                "Attachment": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "Attachment",
+                  "FileName": "sample_extraction_f1.jpg",
+                  "MimeType": "application/jpeg",
+                  "Encoding": "base64",
+                  "Hashes": [
+                    {
+                      "Type": "md5",
+                      "Value": "b3650c44f580b14995bd77284a9dda8d"
+                    }
+                  ],
+                  "Designation": "Specimen F1 cutting",
+                  "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+                },
+                "Date": "2024-03-01",
+                "Timestamp": 1672531200
+              }
+            ]
+          },
+          "MeasurementSystems": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "MeasurementSystem",
+              "Designation": "Analytical balance",
+              "SystemType": "Sartorius BCE124-1S Entris II"
+            }
+          ],
+          "RawData": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "InformationSet",
+              "Designation": "Fogging result",
+              "Attributes": [
+                {
+                  "Property": "Result 1",
+                  "Value": 0.64,
+                  "Unit": "mg",
+                  "Round": "Commercial",
+                  "RoundingAccuracy": 2
+                }
+              ]
+            }
+          ],
+          "SingleResults": [
+            {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "0000000063efa8d963dc65a5b4c11111",
+              "Designation": "Fogging value G",
+              "Unit": "mg",
+              "ActualValue": 0.66,
+              "Round": "Commercial",
+              "RoundingAccuracy": 2
+            }
+          ]
+        },
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "Execution",
+          "Numerator": 2,
+          "Specimen": {
+            "_id": "00000000-0000-0000-0000-000000000000",
+            "_type": "Specimen",
+            "Designation": "323 // adäsaäödsösdad // dad // adas // A23432332442",
+            "Flagging": "Test specimen according to attachment",
+            "Attachment": {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "Attachment",
+              "FileName": "sample_fogging_f2.jpg",
+              "MimeType": "application/jpeg",
+              "Encoding": "base64",
+              "Hashes": [
+                {
+                  "Type": "md5",
+                  "Value": "b3650c44f580b14995bd77284a9dda8d"
+                }
+              ],
+              "Designation": "Specimen F2",
+              "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+            },
+            "ProcessHistory": [
+              {
+                "_type": "ProcessStep",
+                "Index": 1,
+                "Regulation": {
+                  "Authority": "ISO",
+                  "Designation": "ISO 291",
+                  "IssueDate": "2008-08",
+                  "Title": "Normal climate",
+                  "Features": "23/50"
+                },
+                "ProcessData": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "InformationSet",
+                  "Designation": "Preconditioning",
+                  "Attributes": [
+                    {
+                      "Property": "Duration",
+                      "Unit": "d",
+                      "Value": 1
+                    },
+                    {
+                      "Property": "EndDate",
+                      "Value": {
+                        "Date": "2023-09-25"
+                      }
+                    },
+                    {
+                      "Property": "Temperature",
+                      "Unit": "°C",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        23,
+                        {
+                          "MinTolerance": -2,
+                          "MaxTolerance": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Property": "Rel. Humidity",
+                      "Unit": "%",
+                      "ValueType": "NumberWithTolerance",
+                      "Value": [
+                        50,
+                        {
+                          "MinTolerance": -10,
+                          "MaxTolerance": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "AdditionalProperties": [
+            ],
+            "Extractions": [
+              {
+                "_id": "00000000-0000-0000-0000-000000000000",
+                "_type": "Extraction",
+                "Position": "See attachment",
+                "Method": "Cutting",
+                "Designation": "Fogging sample",
+                "Attachment": {
+                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_type": "Attachment",
+                  "FileName": "sample_extraction_f2.jpg",
+                  "MimeType": "application/jpeg",
+                  "Encoding": "base64",
+                  "Hashes": [
+                    {
+                      "Type": "md5",
+                      "Value": "b3650c44f580b14995bd77284a9dda8d"
+                    }
+                  ],
+                  "Designation": "Specimen F2 cutting",
+                  "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
+                },
+                "Date": "2024-03-01",
+                "Timestamp": 1672531200
+              }
+            ]
+          },
+          "MeasurementSystems": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "MeasurementSystem",
+              "Designation": "Analytical balance",
+              "SystemType": "Sartorius BCE124-1S Entris II"
+            }
+          ],
+          "RawData": [
+            {
+              "_id": "00000000-0000-0000-0000-000000000000",
+              "_type": "InformationSet",
+              "Designation": "Fogging result",
+              "Attributes": [
+                {
+                  "Property": "Result 1",
+                  "Value": "0.59",
+                  "Unit": "mg",
+                  "Round": "Commercial",
+                  "RoundingAccuracy": 2
+                }
+              ]
+            }
+          ],
+          "SingleResults": [
+            {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "_type": "SingleResult",
+              "ConsolidatedValueID": "0000000063efa8d963dc65a5b4c11111",
+              "Designation": "Fogging value G",
+              "Unit": "mg",
+              "ActualValue": 0.59,
+              "Round": "Commercial",
+              "RoundingAccuracy": 2
+            }
+          ]
+        }
+      ],
+      "ConsolidatedCharacteristicValues": [
+        {
+          "_id": "00000000-0000-0000-0000-000000000000",
+          "_type": "ConsolidatedCharacteristicValue",
+          "CriterionType": "Variable/Quantitative",
+          "Designation": "Fogging value G",
+          "Unit": "mg",
+          "AggregatedActualValue": 0.61,
+          "Aggregation": "Mean value",
+          "Rounding": "Commercial",
+          "RoundingAccuracy": 2
+        }
+      ]
+    }
+  ]
+}
