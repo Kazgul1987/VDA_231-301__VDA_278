@@ -1,3 +1,5 @@
+![VDS 278](https://github.com/user-attachments/assets/80d2bffa-ec2d-4f6f-91be-9bc244e9fa63)
+
 # VDA 278
   - Title: "Thermal Desorption Analysis of Organic Emissions for the Characterization of Non-Metallic Materials for Automobiles"
   - Schema: _IN PROGRESS_
