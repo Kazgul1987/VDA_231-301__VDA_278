@@ -315,7 +315,7 @@
                   "RoundingAccuracy": 1
                 },
                 {
-                  "Property": "Total emission value (second run)",
+                  "Property": "Second total emission value",
                   "Unit": "µg/g",
                   "Value": 25.9,
                   "Rounding": "Commercial",
@@ -343,54 +343,58 @@
                 {
                   "Property": "Vial Number",
                   "ValueType": "Text",
-                  "Value": null
+                  "Value": "B1023424"
                 },
                 {
                   "Property": "Classifications",
-                  "Value": {
-                    "000100-42-5": {
+                  "Value": [
+                    {
+                      "CAS number": "000100-42-5",
                       "Regulations": [
                         {
                           "Regulation": "CLP",
-                          "Value": [
+                          "Values": [
                             "Repr. 2"
                           ]
                         },
                         {
                           "Regulation": "GADSL",
-                          "Value": [
+                          "Values": [
                             "D"
                           ]
                         }
                       ]
                     },
-                    "000108-95-2": {
+                    {
+                      "CAS number": "000108-95-2",
                       "Regulations": [
                         {
                           "Regulation": "CLP",
-                          "Value": [
+                          "Values": [
                             "Muta. 2"
                           ]
                         },
                         {
                           "Regulation": "GADSL",
-                          "Value": [
+                          "Values": [
                             "D"
                           ]
                         }
                       ]
                     },
-                    "000100-41-4": {
+                    {
+                      "CAS number": "000100-41-4",
                       "Regulations": [
                         {
                           "Regulation": "GADSL",
-                          "Value": [
+                          "Values": [
                             "D"
                           ]
                         }
                       ]
                     },
-                    "000096-76-4": {
+                    {
+                      "CAS number": "000096-76-4",
                       "Regulations": [
                         {
                           "Regulation": "GADSL",
@@ -400,7 +404,7 @@
                         }
                       ]
                     }
-                  }
+                  ]
                 }
               ],
               "ArraySpec": [
@@ -498,7 +502,7 @@
             {
               "_id": "00000000-0000-0000-0000-000000000000",
               "_type": "InformationSet",
-              "Designation": "Fog",
+              "Designation": "FOG",
               "Attributes": [
                 {
                   "Property": "Method",
@@ -517,12 +521,13 @@
                 },
                 {
                   "Property": "Remark",
+                  "ValueType": "Text",
                   "Value": "The following identified substances are listed in the Regulation (EC) No 1272/2008 (CLP-regulation) [Updated to ATP17\n(December 2021)] with Carcinogenicity, Germ cell mutagenicity; embryotoxic or Reproductive toxicity:\n-none-\nThe following identified substances are listed in the Global Automotive Declarable Substance List (GADSL 02/01/2023) with D/P\nor D or P :\n-none-"
                 },
                 {
                   "Property": "Sum of identified substances area",
                   "Unit": "%",
-                  "Value": 113.40,
+                  "Value": 73.40,
                   "Rounding": "Commercial",
                   "RoundingAccuracy": 2
                 },
@@ -532,14 +537,6 @@
                   "Value": 220.4,
                   "Rounding": "Commercial",
                   "RoundingAccuracy": 1
-                },
-                {
-                  "Property": "Vial Number",
-                  "Value": null
-                },
-                {
-                  "Property": "Classifications",
-                  "Value": {}
                 }
               ],
               "ArraySpec": [
@@ -636,7 +633,7 @@
           "_id": "00000000-0000-0000-0000-000000000000",
           "_type": "ConsolidatedCharacteristicValue",
           "CriterionType": "Variable/Quantitative",
-          "Property": "VOC total emission value (second value)",
+          "Property": "VOC second total emission value",
           "Unit": "µg/g",
           "Value": 20.9,
           "Aggregation": "None",
@@ -647,7 +644,7 @@
           "_id": "00000000-0000-0000-0000-000000000000",
           "_type": "ConsolidatedCharacteristicValue",
           "CriterionType": "Variable/Quantitative",
-          "Property": "Fog total emission value",
+          "Property": "FOG total emission value",
           "Unit": "µg/g",
           "Value": 238,
           "Aggregation": "None",
