@@ -228,14 +228,13 @@
             },
             "ProcessHistory": [
               {
-                "_type": "ProcessStep",
                 "_id": "00000000-0000-0000-0000-000000000000",
+                "_type": "ProcessStep",
                 "Index": 1,
                 "Specification": {
                   "Type": "VDA",
                   "Number": "278",
-                  "IssueDate": "2016-05",
-                  "Title": "Thermal desorption-GC-MSD"
+                  "IssueDate": "2016-05"
                 },
                 "ProcessData": {
                   "_id": "00000000-0000-0000-0000-000000000000",

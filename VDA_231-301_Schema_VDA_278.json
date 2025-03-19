@@ -1265,9 +1265,6 @@
         "$ref": "#/$defs/Generic.TestSeries"
       }
     },
-
-
-
     "VDA278.TestSeries": {
       "type": "object",
       "additionalProperties": false,
@@ -1372,8 +1369,6 @@
 
 
 
-
-
     "VDA278.TestExecution": {
       "additionalProperties": false,
       "properties": {
@@ -1437,6 +1432,8 @@
 
 
 
+
+
     "VDA278.InformationSetRawData": {
       "additionalProperties": false,
       "properties": {
@@ -1496,6 +1493,8 @@
 
 
 
+
+
     "VDA278.RawDataArraySpec": {
       "type": "array",
       "minItems": 10,
@@ -1537,9 +1536,6 @@
           }
       ]
     },
-
-
-
     "VDA278.RawDataArrayValue": {
       "description": "An array value type for storing VDA 278 test results.",
       "prefixItems": [
@@ -1877,6 +1873,8 @@
 
 
 
+
+
     "VDA278.Specimen": {
       "additionalProperties": false,
       "properties": {
@@ -1928,54 +1926,27 @@
 
 
 
-
     "VDA278.ProcessStep": {
       "type": "object",
-      "description": "A schema representing a single step in a VDA 278 testing process.",
-      "required": [
-        "_id",
-        "_type",
-        "Index"
-      ],
-      "oneOf": [
-        {
-          "$ref": "#/$defs/VDA278.ProcessStepPreconditioning"
-        }
-      ]
-    },
-
-
-    "VDA278.ProcessStepPreconditioning": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "_id",
-        "_type",
-        "Index"
-      ],
       "properties": {
         "_id": {
           "$ref": "#/$defs/Generic.Identifier"
         },
         "_type": {
-          "const": "ProcessStep",
-          "type": "string"
+          "const": "ProcessStep"
+        },
+        "Specification": {
+          "const": {
+            "Type": "VDA",
+            "Number": "278",
+            "IssueDate": "2016-05"
+          }
         },
         "Index": {
-          "description": "The sequential index of the process step.",
-          "example": 1,
           "type": "integer"
         },
-
-
-
-        "Specification": {
-          "$ref": "#/$defs/Generic.Specification",
-          "description": "The specification associated with this process step."
-        },
         "ProcessData": {
-          "$ref": "#/$defs/Generic.InformationSet",
-          "description": "The information set related to this process step."
+          "$ref": "#/$defs/VDA278.ProcessDataPreconditioning"
         },
         "Comment": {
           "$ref": "#/$defs/Generic.LongString"
@@ -1983,11 +1954,160 @@
         "Attachment": {
           "$ref": "#/$defs/Generic.Attachment"
         }
-      }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Specification",
+        "Index",
+        "ProcessData"
+      ]
     },
 
 
+    "VDA278.ProcessDataPreconditioning": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/Generic.Identifier"
+        },
+        "_type": {
+          "const": "InformationSet"
+        },
+        "Designation": {
+          "const": "Preconditioning"
+        },
+        "Attributes": {
+          "type": "array",
+          "maxItems": 6,
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningDuration"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningEndDate"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningTempMin"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningTempMax"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningHumidMin"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ProcessDataPreconditioningHumidMax"
+            }
+          ]
+        }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Designation",
+        "Attributes"
+      ]
+    },
 
+    "VDA278.ProcessDataPreconditioningDuration": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Duration"
+        },
+        "Unit": {
+          "const": "d"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        }
+      }
+    },
+    "VDA278.ProcessDataPreconditioningEndDate": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "End date"
+        },
+        "Value": {
+          "$ref": "#/$defs/Generic.Date"
+        }
+      }
+    },
+    "VDA278.ProcessDataPreconditioningTempMin": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Temperature minimum"
+        },
+        "Unit": {
+          "const": "°C"
+        },
+        "ValueType": {
+          "const": "Number"
+        },
+        "Value": {
+          "type": "number"
+        }
+      }
+    },
+    "VDA278.ProcessDataPreconditioningTempMax": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Temperature maximum"
+        },
+        "Unit": {
+          "const": "°C"
+        },
+        "ValueType": {
+          "const": "Number"
+        },
+        "Value": {
+          "type": "number"
+        }
+      }
+    },
+    "VDA278.ProcessDataPreconditioningHumidMin": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Relative humidity minimum"
+        },
+        "Unit": {
+          "const": "%"
+        },
+        "ValueType": {
+          "const": "Number"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 100.0
+        }
+      }
+    },
+    "VDA278.ProcessDataPreconditioningHumidMax": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Relative humidity maximum"
+        },
+        "Unit": {
+          "const": "%"
+        },
+        "ValueType": {
+          "const": "Number"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 100.0
+        }
+      }
+    },
 
 
 
