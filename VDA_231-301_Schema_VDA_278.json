@@ -1398,65 +1398,45 @@
 
 
     "VDA278.RawDataArraySpec": {
-      "description": "An array specification for storing VDA 278 test results.",
-      "prefixItems": [
-        {
-          "const": {
-            "Property": "Retention time",
-            "Unit": "min"
-          }
-        },
-        {
-          "const": {
-            "Property": "Substance name"
-          }
-        },
-        {
-          "const": {
-            "Property": "Legacy substance"
-          }
-        },
-        {
-          "const": {
-            "Property": "Mass fragments"
-          }
-        },
-        {
-          "const": {
-            "Property": "Main mass fragment"
-          }
-        },
-        {
-          "const": {
-            "Property": "Potential substance match"
-          }
-        },
-        {
-          "const": {
-            "Property": "CAS number"
-          }
-        },
-        {
-          "const": {
-            "Property": "Area",
-            "Unit": "%"
-          }
-        },
-        {
-          "const": {
-            "Property": "Emission",
-            "Unit": "µg/g"
-          }
-        },
-        {
-          "const": {
-            "Property": "Remark"
-          }
-        }
-      ],
+      "type": "array",
       "minItems": 10,
       "maxItems": 10,
-      "type": "array"
+      "description": "An array specification for storing VDA 278 test results.",
+      "const": [
+          {
+            "Property": "Retention time",
+            "Unit": "min"
+          },
+          {
+            "Property": "Substance name"
+          },
+          {
+            "Property": "Legacy substance"
+          },
+          {
+            "Property": "Mass fragments"
+          },
+          {
+            "Property": "Main mass fragment"
+          },
+          {
+            "Property": "Potential substance match"
+          },
+          {
+            "Property": "CAS number"
+          },
+          {
+            "Property": "Area",
+            "Unit": "%"
+          },
+          {
+            "Property": "Emission",
+            "Unit": "µg/g"
+          },
+          {
+            "Property": "Remark"
+          }
+      ]
     },
 
 
