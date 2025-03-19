@@ -105,7 +105,7 @@
         "IssueDate": "2016-05",
         "Title": "Thermal desorption-GC-MSD"
       },
-      "TestType": "VDA 278",
+      "TestType": "Thermodesorption",
       "NumberOfExecutions": 2,
       "Assessment": "Substances have been identified that are listed in the CLP Regular and/or GADSL list. In total there are: styrene, phenol, Phenol, 2,4-bis(1,1-dimethylethyl)-, ethylbenzene",
       "TestingCenter": {
@@ -248,34 +248,34 @@
                       "Value": 7
                     },
                     {
-                      "Property": "EndDate",
+                      "Property": "End date",
                       "Value": {
                         "Date": "2023-10-16"
                       }
                     },
                     {
-                      "Property": "Temperature",
+                      "Property": "Temperature minimum",
                       "Unit": "°C",
-                      "ValueType": "NumberWithTolerance",
-                      "Value": [
-                        23,
-                        {
-                          "MinTolerance": -2,
-                          "MaxTolerance": 2
-                        }
-                      ]
+                      "ValueType": "Number",
+                      "Value": 21.3
                     },
                     {
-                      "Property": "Rel. Humidity",
+                      "Property": "Temperature maximum",
+                      "Unit": "°C",
+                      "ValueType": "Number",
+                      "Value": 24.2
+                    },
+                    {
+                      "Property": "Relative humidity minimum",
                       "Unit": "%",
-                      "ValueType": "NumberWithTolerance",
-                      "Value": [
-                        50,
-                        {
-                          "MinTolerance": -10,
-                          "MaxTolerance": 10
-                        }
-                      ]
+                      "ValueType": "Number",
+                      "Value": 41.2
+                    },
+                    {
+                      "Property": "Relative humidity maximum",
+                      "Unit": "%",
+                      "ValueType": "Number",
+                      "Value": 57.4
                     }
                   ]
                 }
@@ -405,7 +405,7 @@
               ],
               "ArraySpec": [
                 {
-                  "Property": "Retention Time",
+                  "Property": "Retention time",
                   "Unit": "min"
                 },
                 {
@@ -424,14 +424,14 @@
                   "Property": "Potential substance match"
                 },
                 {
-                  "Property": "CAS-Nr."
+                  "Property": "CAS number"
                 },
                 {
                   "Property": "Area",
                   "Unit": "%"
                 },
                 {
-                  "Property": "Emmision",
+                  "Property": "Emission",
                   "Unit": "µg/g"
                 },
                 {
@@ -460,6 +460,7 @@
                 [
                   14.54,
                   "ethylbenzene",
+                  null,
                   [
                     91,
                     106,
@@ -477,6 +478,7 @@
                 [
                   16.02,
                   "styrene",
+                  null,
                   [
                     104,
                     103,
@@ -496,7 +498,7 @@
             {
               "_id": "00000000-0000-0000-0000-000000000000",
               "_type": "InformationSet",
-              "Designation": "FOG",
+              "Designation": "Fog",
               "Attributes": [
                 {
                   "Property": "Method",
@@ -542,7 +544,7 @@
               ],
               "ArraySpec": [
                 {
-                  "Property": "Retention Time",
+                  "Property": "Retention time",
                   "Unit": "min"
                 },
                 {
@@ -561,14 +563,14 @@
                   "Property": "Potential substance match"
                 },
                 {
-                  "Property": "CAS-Nr."
+                  "Property": "CAS number"
                 },
                 {
                   "Property": "Area",
                   "Unit": "%"
                 },
                 {
-                  "Property": "Emmision",
+                  "Property": "Emission",
                   "Unit": "µg/g"
                 },
                 {
@@ -626,7 +628,7 @@
           "Property": "VOC total emission value",
           "Unit": "µg/g",
           "Value": 29.1,
-          "Aggregation": "Summation",
+          "Aggregation": "None",
           "Rounding": "Commercial",
           "RoundingAccuracy": 1
         },
@@ -637,7 +639,7 @@
           "Property": "VOC total emission value (second value)",
           "Unit": "µg/g",
           "Value": 20.9,
-          "Aggregation": "Summation",
+          "Aggregation": "None",
           "Rounding": "Commercial",
           "RoundingAccuracy": 1
         },
@@ -648,7 +650,7 @@
           "Property": "Fog total emission value",
           "Unit": "µg/g",
           "Value": 238,
-          "Aggregation": "Summation",
+          "Aggregation": "None",
           "Rounding": "Commercial",
           "RoundingAccuracy": 1
         }
