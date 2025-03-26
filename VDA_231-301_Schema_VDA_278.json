@@ -65,6 +65,9 @@
       "minItems": 1,
       "items": {
         "$ref": "#/$defs/VDA278.BranchingTestSeries"
+      },
+      "contains": {
+        "$ref": "#/$defs/VDA278.TestSeries"
       }
     }
   },
