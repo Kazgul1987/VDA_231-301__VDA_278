@@ -1322,30 +1322,6 @@
       "pattern": "^[\\u0020-\\u00FF]*$",
       "type": "string"
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     "VDA278.BranchingTestSeries": {
       "type": "object",
       "if": {
@@ -1472,14 +1448,6 @@
         "SuccessorId"
       ]
     },
-
-
-
-
-
-
-
-
     "VDA278.TestExecution": {
       "additionalProperties": false,
       "properties": {
@@ -1540,11 +1508,6 @@
       ],
       "type": "object"
     },
-
-
-
-
-
     "VDA278.InformationSetRawData": {
       "additionalProperties": false,
       "properties": {
@@ -1601,11 +1564,6 @@
       ],
       "type": "object"
     },
-
-
-
-
-
     "VDA278.RawDataArraySpec": {
       "type": "array",
       "minItems": 10,
@@ -1714,12 +1672,6 @@
       "maxItems": 10,
       "type": "array"
     },
-
-
-
-
-
-
     "VDA278.RawDataAttribute": {
       "type": "object",
       "required": [
@@ -1981,11 +1933,6 @@
         }
       }
     },
-
-
-
-
-
     "VDA278.Specimen": {
       "additionalProperties": false,
       "properties": {
@@ -2033,10 +1980,6 @@
       ],
       "type": "object"
     },
-
-
-
-
     "VDA278.ProcessStep": {
       "type": "object",
       "properties": {
@@ -2074,8 +2017,6 @@
         "ProcessData"
       ]
     },
-
-
     "VDA278.ProcessDataPreconditioning": {
       "type": "object",
       "properties": {
@@ -2120,7 +2061,6 @@
         "Attributes"
       ]
     },
-
     "VDA278.ProcessDataPreconditioningDuration": {
       "type": "object",
       "properties": {
@@ -2219,9 +2159,6 @@
         }
       }
     },
-
-
-
     "VDA278.ConsolidatedCharacteristicValue": {
       "type": "object",
       "required": [
@@ -2287,8 +2224,5 @@
         "CriterionType"
       ]
     }
-
-
-
   }
 }
