@@ -1,60 +1,51 @@
 {
-  "_id": "00000000-0000-0000-0000-000000000000",
+  "_id": "01917fb1-6d60-8abc-8abc-017617032d5c",
   "_type": "TestReport",
   "_schemaVersion": "0.0.2",
-  "ClientOrderNumber": "75034211 - 213234422 - version B",
-  "LaboratoryOrderNumber": "334233421334",
-  "OrderReference": "4522233 - 21434",
-  "OrderDate": {
-    "Date": "2023-10-05"
-  },
-  "ReportDate": {
-    "Date": "2023-10-30"
-  },
-  "Signatory": "Example Signatory",
   "Client": {
-    "_id": "00000000-0000-0000-0000-000000000000",
+    "_id": "01917fb1-6d60-8abc-8abc-83938c48cec9",
     "_type": "Location",
-    "Name": "Generic Automotive Company",
+    "Name": "Example Client",
     "Identification": [
       {
-        "Type": "ExampleLocID",
-        "Identifier": "0001"
+        "Type": "Example Identification Type",
+        "Identifier": "00001"
       }
     ]
   },
+  "ClientOrderNumber": "MX1232407270021aj",
   "Contractor": {
-    "_id": "00000000-0000-0000-0000-000000000000",
+    "_id": "01917fb1-6d60-8abc-8abc-ac49a8c54352",
     "_type": "TestingCenter",
     "Location": {
-      "_id": "00000000-0000-0000-0000-000000000000",
+      "_id": "01917fb1-6d60-8abc-8abc-950a711ad4d2",
       "_type": "Location",
-      "Name": "Testlab GmbH",
-      "Address": {
-        "_id": "dd317ad2-70a8-4e92-be06-eb1f8d3e4bd1",
-        "_type": "ContactDetails",
-        "Phone": "+49 222 333 444",
-        "Fax": "+49 222 333 445",
-        "EMail": "info@testlab.com"
-      },
+      "Name": "TestLab",
       "Identification": [
         {
-          "Type": "ExampleLocID",
-          "Identifier": "0002"
+          "Type": "Example Identification Type",
+          "Identifier": "00011"
         }
-      ]
+      ],
+      "Address": {
+        "_id": "01917fb1-6d60-8abc-8abc-002abdd41288",
+        "_type": "ContactDetails",
+        "EMail": "info@testlab.com",
+        "Fax": "\u002B49 222 333 441",
+        "Phone": "\u002B49 222 333 440"
+      }
     },
     "TestingManager": {
-      "_id": "00000000-0000-0000-0000-000000000000",
+      "_id": "01917fb1-6d60-8abc-8abc-e9914c422dc7",
       "_type": "Person",
       "FirstName": "John",
       "LastName": "Doe",
-      "ID-Number": "9827398732",
+      "ID-Number": "108326",
       "EMail": "john.doe@testlab.com"
     },
     "Certifications": [
       {
-        "_id": "00000000-0000-0000-0000-000000000000",
+        "_id": "01917fb1-6d60-8abc-8abc-51e397accdb0",
         "_type": "Certification",
         "Specification": {
           "Authority": "DIN",
@@ -64,37 +55,49 @@
         },
         "AccreditationDate": {
           "Date": "2019-11-01"
-        },
-        "ValidUntil": {
-          "Date": "2024-11-01"
         }
       },
       {
-        "_id": "00000000-0000-0000-0000-000000000000",
+        "_id": "01917fb1-6d60-8abc-8abc-2619c6d9ea40",
         "_type": "Certification",
         "Specification": {
-          "Authority": "Manufacturer",
-          "Type": "BQF ECM",
-          "IssueDate": "2019-01",
-          "Number": "1001"
+          "Authority": "Example Authority",
+          "Type": "EXA",
+          "Number": "1001",
+          "IssueDate": "2019-01"
         },
         "AccreditationDate": {
-          "Date": "2019-11-01"
+          "Date": "2022-11-01"
+        },
+        "ValidUntil": {
+          "Date": "2025-11-01"
         }
       }
     ]
   },
+  "LaboratoryOrderNumber": "2025021100123TL03",
+  "OrderReference": "OR-20250212045327",
+  "OrderDate": {
+    "Date": "2025-02-12"
+  },
+  "ReportDate": {
+    "Date": "2025-02-24"
+  },
+  "Signatory": "John Doe",
   "Components": [
     {
-      "_id": "db218846-88c1-4cdb-a9b2-76925b1d6884",
+      "_id": "01917fb1-6d60-8abc-8abc-0412c6aff92b",
       "_type": "Component",
       "Designation": "Part 4711",
       "PartNumber": "X1234567890"
     }
   ],
+
+
+
   "TestSeries": [
     {
-      "_id": "00000000-0000-0000-0000-000000000000",
+      "_id": "01917fb1-6d60-8abc-8abc-100000000001",
       "_type": "TestSeries",
       "PredecessorId": null,
       "SuccessorId": null,
@@ -109,80 +112,85 @@
       "NumberOfExecutions": 2,
       "Assessment": "Substances have been identified that are listed in the CLP Regular and/or GADSL list. In total there are: styrene, phenol, Phenol, 2,4-bis(1,1-dimethylethyl)-, ethylbenzene",
       "TestingCenter": {
-        "_id": "00000000-0000-0000-0000-000000000000",
+        "_id": "01917fb1-6d60-8abc-8abc-ac49a8c54353",
         "_type": "TestingCenter",
         "Location": {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-950a711ad4d3",
           "_type": "Location",
-          "Name": "Testlab GmbH",
-          "Address": {
-            "_id": "dd317ad2-70a8-4e92-be06-eb1f8d3e4bd1",
-            "_type": "ContactDetails",
-            "Phone": "+49 222 333 444",
-            "Fax": "+49 222 333 445",
-            "EMail": "info@testlab.com"
-          },
+          "Name": "TestLab",
           "Identification": [
             {
-              "Type": "ExampleLocID",
-              "Identifier": "0002"
+              "Type": "Example Identification Type",
+              "Identifier": "00011"
             }
-          ]
+          ],
+          "Address": {
+            "_id": "01917fb1-6d60-8abc-8abc-002abdd41289",
+            "_type": "ContactDetails",
+            "EMail": "info@testlab.com",
+            "Fax": "\u002B49 222 333 441",
+            "Phone": "\u002B49 222 333 440"
+          }
         },
         "TestingManager": {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-e9914c422dc8",
           "_type": "Person",
           "FirstName": "John",
           "LastName": "Doe",
-          "ID-Number": "9201098309",
+          "ID-Number": "108326",
           "EMail": "john.doe@testlab.com"
         },
         "Certifications": [
           {
-            "_id": "00000000-0000-0000-0000-000000000000",
+            "_id": "01917fb1-6d60-8abc-8abc-51e397accdb1",
             "_type": "Certification",
             "Specification": {
-              "Authority": "ISO",
-              "Type": "ISO",
+              "Authority": "DIN",
+              "Type": "DIN EN ISO/IEC",
               "Number": "17025",
-              "IssueDate": "2017-11"
+              "IssueDate": "2018-03"
             },
             "AccreditationDate": {
-              "Date": "2019-11-02"
-            },
-            "ValidUntil": {
-              "Date": "2024-11-02"
+              "Date": "2019-11-01"
             }
           },
           {
-            "_id": "00000000-0000-0000-0000-000000000000",
+            "_id": "01917fb1-6d60-8abc-8abc-2619c6d9ea41",
             "_type": "Certification",
             "Specification": {
-              "Authority": "Manufacturer",
-              "Type": "ECM",
+              "Authority": "Example Authority",
+              "Type": "EXA",
               "Number": "1001",
-              "IssueDate": "2019-11"
+              "IssueDate": "2019-01"
             },
             "AccreditationDate": {
-              "Date": "2019-11-02"
+              "Date": "2022-11-01"
+            },
+            "ValidUntil": {
+              "Date": "2025-11-01"
             }
           }
         ]
       },
+
+      
+
+
+
       "Executions": [
         {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-110000000001",
           "_type": "TestExecution",
           "Numerator": 1,
           "Designation": "14345",
           "Specimen": {
-            "_id": "00000000-0000-0000-0000-000000000000",
+            "_id": "01917fb1-6d60-8abc-8abc-111000000001",
             "_type": "Specimen",
             "Designation": "VOC / FOG sample",
             "ComponentID": "db218846-88c1-4cdb-a9b2-76925b1d6884",
             "Flagging": "Test specimen according to attachment",
             "Attachment": {
-              "_id": "00000000-0000-0000-0000-000000000000",
+              "_id": "01917fb1-6d60-8abc-8abc-111100000001",
               "_type": "Attachment",
               "FileName": "sample_vda278.jpg",
               "MimeType": "application/jpeg",
@@ -197,7 +205,7 @@
               "Data": "e2Fib3d1ZmJvZjhxM2FvcGgzd2FmcW84cGhiZn0="
             },
             "Extraction": {
-              "_id": "00000000-0000-0000-0000-000000000000",
+              "_id": "01917fb1-6d60-8abc-8abc-111110000001",
               "_type": "Extraction",
               "Position": "See attachment",
               "Method": "Drill core",
@@ -207,7 +215,7 @@
                 "IssueDate": "2016-05"
               },
               "Attachment": {
-                "_id": "00000000-0000-0000-0000-000000000000",
+                "_id": "01917fb1-6d60-8abc-8abc-111111000001",
                 "_type": "Attachment",
                 "FileName": "sample_extraction_b1.jpg",
                 "MimeType": "application/jpeg",
@@ -228,7 +236,7 @@
             },
             "ProcessHistory": [
               {
-                "_id": "00000000-0000-0000-0000-000000000000",
+                "_id": "01917fb1-6d60-8abc-8abc-111120000001",
                 "_type": "ProcessStep",
                 "Index": 1,
                 "Specification": {
@@ -237,7 +245,7 @@
                   "IssueDate": "2016-05"
                 },
                 "ProcessData": {
-                  "_id": "00000000-0000-0000-0000-000000000000",
+                  "_id": "01917fb1-6d60-8abc-8abc-111120000002",
                   "_type": "InformationSet",
                   "Designation": "Preconditioning",
                   "Attributes": [
@@ -283,7 +291,7 @@
           },
           "MeasurementSystems": [
             {
-              "_id": "00000000-0000-0000-0000-000000000000",
+              "_id": "01917fb1-6d60-8abc-8abc-112000000001",
               "_type": "MeasurementSystem",
               "Designation": "GCMS",
               "SystemType": "GC-AA01",
@@ -292,7 +300,7 @@
           ],
           "RawData": [
             {
-              "_id": "00000000-0000-0000-0000-000000000000",
+              "_id": "01917fb1-6d60-8abc-8abc-113000000001",
               "_type": "InformationSet",
               "Designation": "VOC",
               "Attributes": [
@@ -304,7 +312,7 @@
                 {
                   "Property": "File name",
                   "ValueType": "Text",
-                  "Value": "98798787989B.D"
+                  "Value": "2025021100123TL03V1.D"
                 },
                 {
                   "Property": "Total emission value",
@@ -499,7 +507,7 @@
               ]
             },
             {
-              "_id": "00000000-0000-0000-0000-000000000000",
+              "_id": "01917fb1-6d60-8abc-8abc-113000000002",
               "_type": "InformationSet",
               "Designation": "FOG",
               "Attributes": [
@@ -509,7 +517,7 @@
                 },
                 {
                   "Property": "File name",
-                  "Value": "42029309843B.D"
+                  "Value": "2025021100123TL03F1.D"
                 },
                 {
                   "Property": "Total emission value",
@@ -618,7 +626,7 @@
       ],
       "ConsolidatedCharacteristicValues": [
         {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-114000000001",
           "_type": "ConsolidatedCharacteristicValue",
           "CriterionType": "Variable/Quantitative",
           "Property": "VOC total emission value",
@@ -629,7 +637,7 @@
           "RoundingAccuracy": 1
         },
         {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-114000000002",
           "_type": "ConsolidatedCharacteristicValue",
           "CriterionType": "Variable/Quantitative",
           "Property": "VOC second total emission value",
@@ -640,7 +648,7 @@
           "RoundingAccuracy": 1
         },
         {
-          "_id": "00000000-0000-0000-0000-000000000000",
+          "_id": "01917fb1-6d60-8abc-8abc-114000000003",
           "_type": "ConsolidatedCharacteristicValue",
           "CriterionType": "Variable/Quantitative",
           "Property": "FOG total emission value",
