@@ -286,7 +286,7 @@
               "_id": "01917fb1-6d60-8abc-8abc-112000000001",
               "_type": "MeasurementSystem",
               "Designation": "GCMS",
-              "SystemType": "GC-AA01",
+              "SystemType": "GC-AB01",
               "Location": "Laboratory 1"
             }
           ],
@@ -348,7 +348,7 @@
                   "Property": "Classifications",
                   "Value": [
                     {
-                      "CAS number": "000100-42-5",
+                      "CAS registry number": "100-42-5",
                       "Regulations": [
                         {
                           "Regulation": "CLP",
@@ -365,7 +365,7 @@
                       ]
                     },
                     {
-                      "CAS number": "000108-95-2",
+                      "CAS registry number": "108-95-2",
                       "Regulations": [
                         {
                           "Regulation": "CLP",
@@ -382,7 +382,7 @@
                       ]
                     },
                     {
-                      "CAS number": "000100-41-4",
+                      "CAS registry number": "100-41-4",
                       "Regulations": [
                         {
                           "Regulation": "GADSL",
@@ -393,11 +393,11 @@
                       ]
                     },
                     {
-                      "CAS number": "000096-76-4",
+                      "CAS registry number": "96-76-4",
                       "Regulations": [
                         {
                           "Regulation": "GADSL",
-                          "Value": [
+                          "Values": [
                             "D"
                           ]
                         }
@@ -427,7 +427,7 @@
                   "Property": "Potential substance match"
                 },
                 {
-                  "Property": "CAS number"
+                  "Property": "CAS registry number"
                 },
                 {
                   "Property": "Area",
@@ -559,7 +559,7 @@
                   "Property": "Potential substance match"
                 },
                 {
-                  "Property": "CAS number"
+                  "Property": "CAS registry number"
                 },
                 {
                   "Property": "Area",
