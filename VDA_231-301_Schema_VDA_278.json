@@ -1437,11 +1437,21 @@
           "type": "array"
         },
         "ConsolidatedCharacteristicValues": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/VDA278.ConsolidatedCharacteristicValueVOC1TotalEmission"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ConsolidatedCharacteristicValueVOC2TotalEmission"
+            },
+            {
+              "$ref": "#/$defs/VDA278.ConsolidatedCharacteristicValueFOGTotalEmission"
+            }
+          ],
           "items": {
-            "$ref": "#/$defs/VDA278.ConsolidatedCharacteristicValue"
-          },
-          "minItems": 1,
-          "type": "array"
+            "$ref": "#/$defs/Generic.ConsolidatedCharacteristicValue"
+          }
         }
       },
       "required": [
@@ -2179,7 +2189,7 @@
         }
       ]
     },
-    "VDA278.ConsolidatedCharacteristicValueTotalEmission": {
+    "VDA278.ConsolidatedCharacteristicValueVOC1TotalEmission": {
       "type": "object",
       "properties": {
         "_id": {
@@ -2190,20 +2200,90 @@
           "type": "string"
         },
         "Property": {
-          "oneOf": [
-            {
-              "const": "VOC total emission value",
-              "type": "string"
-            },
-            {
-              "const": "VOC second total emission value",
-              "type": "string"
-            },
-            {
-              "const": "FOG total emission value",
-              "type": "string"
-            }
-          ]
+          "const": "VOC total emission value",
+          "type": "string"
+        },
+        "Unit": {
+          "const": "µg/g",
+          "type": "string"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "Aggregation": {
+          "const": "None",
+          "type": "string"
+        },
+        "CriterionType": {
+          "const": "Variable/Quantitative",
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Property",
+        "Unit",
+        "Value",
+        "Aggregation",
+        "CriterionType"
+      ]
+    },
+    "VDA278.ConsolidatedCharacteristicValueVOC2TotalEmission": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/Generic.Identifier"
+        },
+        "_type": {
+          "const": "ConsolidatedCharacteristicValue",
+          "type": "string"
+        },
+        "Property": {
+          "const": "VOC second total emission value",
+          "type": "string"
+        },
+        "Unit": {
+          "const": "µg/g",
+          "type": "string"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "Aggregation": {
+          "const": "None",
+          "type": "string"
+        },
+        "CriterionType": {
+          "const": "Variable/Quantitative",
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Property",
+        "Unit",
+        "Value",
+        "Aggregation",
+        "CriterionType"
+      ]
+    },
+    "VDA278.ConsolidatedCharacteristicValueFOGTotalEmission": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/Generic.Identifier"
+        },
+        "_type": {
+          "const": "ConsolidatedCharacteristicValue",
+          "type": "string"
+        },
+        "Property": {
+          "const": "FOG total emission value",
+          "type": "string"
         },
         "Unit": {
           "const": "µg/g",
