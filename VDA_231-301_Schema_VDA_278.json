@@ -1991,11 +1991,12 @@
           "$ref": "#/$defs/Generic.Extraction"
         },
         "ProcessHistory": {
-          "description": "An array of processing steps.",
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
           "items": {
-            "$ref": "#/$defs/VDA278.ProcessStep"
-          },
-          "type": "array"
+            "$ref": "#/$defs/VDA278.ProcessStepPreconditioning"
+          }
         }
       },
       "required": [
@@ -2006,7 +2007,7 @@
       ],
       "type": "object"
     },
-    "VDA278.ProcessStep": {
+    "VDA278.ProcessStepPreconditioning": {
       "type": "object",
       "properties": {
         "_id": {
