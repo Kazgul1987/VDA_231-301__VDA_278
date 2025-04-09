@@ -1932,7 +1932,7 @@
         "Regulations": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/VDA278.RawDataAttributeClassificationRegulationItem"
+            "$ref": "#/$defs/VDA278.RawDataAttributeClassificationBranchingRegulationItem"
           }
         }
       },
@@ -1940,6 +1940,23 @@
         "CAS registry number",
         "Regulations"
       ]
+    },
+    "VDA278.RawDataAttributeClassificationBranchingRegulationItem": {
+      "type": "object",
+      "if": {
+        "properties": {
+          "Regulation": {
+            "type": "string",
+            "const": "GADSL"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/VDA278.RawDataAttributeClassificationGADSLRegulationItem"
+      },
+      "else": {
+        "$ref": "#/$defs/VDA278.RawDataAttributeClassificationRegulationItem"
+      }
     },
     "VDA278.RawDataAttributeClassificationRegulationItem": {
       "type": "object",
@@ -1949,8 +1966,36 @@
         },
         "Values": {
           "type": "array",
+          "uniqueItems": true,
           "items": {
             "$ref": "#/$defs/Generic.RestrictedString"
+          }
+        }
+      },
+      "required": [
+        "Regulation",
+        "Values"
+      ]
+    },
+    "VDA278.RawDataAttributeClassificationGADSLRegulationItem": {
+      "type": "object",
+      "properties": {
+        "Regulation": {
+          "type": "string",
+          "const": "GADSL"
+        },
+        "Values": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "oneOf": [
+              {
+                "const": "D"
+              },
+              {
+                "const": "P"
+              }
+            ]
           }
         }
       },
