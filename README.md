@@ -5,4 +5,4 @@
   - Schema: [VDA_231-301_Schema_VDA_278.json](./VDA_231-301_Schema_VDA_278.json)
   - Example test report JSON: [VDA_231-301_Example_VDA_278.json](./VDA_231-301_Example_VDA_278.json)
   - Standard source: https://webshop.vda.de/VDA/de/vda-278-05-2016
-  - Version: TBD
+  - Version: 1.0.0
