@@ -2,6 +2,9 @@
   "$id": "https://github.com/VDA231-301/VDA_231-301__VDA_277/blob/main/VDA_231-301_Schema_VDA_277.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "VDA 231-301 TestReport JSON schema for VDA 277",
+  "$id": "https://github.com/VDA231-301/VDA_231-301__VDA_278/blob/main/VDA_231-301_Schema_VDA_278.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VDA 231-301 TestReport JSON schema for VDA 278",
   "type": "object",
   "additionalProperties": false,
   "description": "This is the Generic Schema which validates the structure of the file",
@@ -1339,6 +1342,11 @@
               },
               "IssueDate": {
                 "const": "2017-02",
+                "const": "278",
+                "type": "string"
+              },
+              "IssueDate": {
+                "const": "2016-05",
                 "type": "string"
               }
             }
@@ -1380,6 +1388,11 @@
                 },
                 "IssueDate": {
                   "const": "2017-02",
+                  "const": "278",
+                  "type": "string"
+                },
+                "IssueDate": {
+                  "const": "2016-05",
                   "type": "string"
                 }
               }
@@ -1387,7 +1400,7 @@
           ]
         },
         "TestType": {
-          "const": "Headspace GC-MS",
+          "const": "Thermodesorption",
           "type": "string"
         },
         "FeaturesAccordingToSpecification": {
@@ -1441,6 +1454,12 @@
           "prefixItems": [
             {
               "$ref": "#/$defs/VDA277.ConsolidatedCharacteristicValueVOC1TotalEmission"
+            },
+            {
+              "$ref": "#/$defs/VDA277.ConsolidatedCharacteristicValueVOC2TotalEmission"
+            },
+            {
+              "$ref": "#/$defs/VDA277.ConsolidatedCharacteristicValueFOGTotalEmission"
             }
           ],
           "items": {
@@ -1533,6 +1552,16 @@
         "Designation": {
           "const": "VOC",
           "type": "string"
+          "oneOf": [
+            {
+              "type": "string",
+              "const": "VOC"
+            },
+            {
+              "type": "string",
+              "const": "FOG"
+            }
+          ]
         },
         "ArraySpec": {
           "$ref": "#/$defs/VDA277.RawDataArraySpec"
@@ -1611,6 +1640,45 @@
     },
     "VDA277.RawDataArrayValue": {
       "description": "An array value type for storing VDA 277 test results.",
+      "description": "An array specification for storing VDA 278 test results.",
+      "const": [
+          {
+            "Property": "Retention time",
+            "Unit": "min"
+          },
+          {
+            "Property": "Substance name"
+          },
+          {
+            "Property": "Legacy substance"
+          },
+          {
+            "Property": "Mass fragments"
+          },
+          {
+            "Property": "Main mass fragment"
+          },
+          {
+            "Property": "Potential substance match"
+          },
+          {
+            "Property": "CAS registry number"
+          },
+          {
+            "Property": "Area",
+            "Unit": "%"
+          },
+          {
+            "Property": "Emission",
+            "Unit": "µg/g"
+          },
+          {
+            "Property": "Remark"
+          }
+      ]
+    },
+    "VDA277.RawDataArrayValue": {
+      "description": "An array value type for storing VDA 278 test results.",
       "prefixItems": [
         {
           "type": "number",
@@ -1693,6 +1761,9 @@
           "$ref": "#/$defs/VDA277.RawDataAttributeTotalEmissionValue"
         },
         {
+          "$ref": "#/$defs/VDA277.RawDataAttributeSecondTotalEmissionValue"
+        },
+        {
           "$ref": "#/$defs/VDA277.RawDataAttributeRemark"
         },
         {
@@ -1750,6 +1821,32 @@
       "properties": {
         "Property": {
           "const": "Total emission value"
+        },
+        "Unit": {
+          "const": "µg/g"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "Rounding": {
+          "$ref": "#/$defs/Generic.RestrictedString"
+        },
+        "RoundingAccuracy": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "Property",
+        "Unit",
+        "Value"
+      ]
+    },
+    "VDA277.RawDataAttributeSecondTotalEmissionValue": {
+      "type": "object",
+      "properties": {
+        "Property": {
+          "const": "Second total emission value"
         },
         "Unit": {
           "const": "µg/g"
@@ -2023,6 +2120,8 @@
             "Type": "VDA",
             "Number": "277",
             "IssueDate": "2017-02"
+            "Number": "278",
+            "IssueDate": "2016-05"
           }
         },
         "Index": {
@@ -2200,6 +2299,88 @@
         },
         "Property": {
           "const": "VOC total emission value",
+          "type": "string"
+        },
+        "Unit": {
+          "const": "µg/g",
+          "type": "string"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "Aggregation": {
+          "const": "None",
+          "type": "string"
+        },
+        "CriterionType": {
+          "const": "Variable/Quantitative",
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Property",
+        "Unit",
+        "Value",
+        "Aggregation",
+        "CriterionType"
+      ]
+    },
+    "VDA277.ConsolidatedCharacteristicValueVOC2TotalEmission": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/Generic.Identifier"
+        },
+        "_type": {
+          "const": "ConsolidatedCharacteristicValue",
+          "type": "string"
+        },
+        "Property": {
+          "const": "VOC second total emission value",
+          "type": "string"
+        },
+        "Unit": {
+          "const": "µg/g",
+          "type": "string"
+        },
+        "Value": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "Aggregation": {
+          "const": "None",
+          "type": "string"
+        },
+        "CriterionType": {
+          "const": "Variable/Quantitative",
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "_type",
+        "Property",
+        "Unit",
+        "Value",
+        "Aggregation",
+        "CriterionType"
+      ]
+    },
+    "VDA277.ConsolidatedCharacteristicValueFOGTotalEmission": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/Generic.Identifier"
+        },
+        "_type": {
+          "const": "ConsolidatedCharacteristicValue",
+          "type": "string"
+        },
+        "Property": {
+          "const": "FOG total emission value",
           "type": "string"
         },
         "Unit": {
