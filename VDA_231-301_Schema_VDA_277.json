@@ -2,9 +2,6 @@
   "$id": "https://github.com/VDA231-301/VDA_231-301__VDA_277/blob/main/VDA_231-301_Schema_VDA_277.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "VDA 231-301 TestReport JSON schema for VDA 277",
-  "$id": "https://github.com/VDA231-301/VDA_231-301__VDA_278/blob/main/VDA_231-301_Schema_VDA_278.json",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "VDA 231-301 TestReport JSON schema for VDA 278",
   "type": "object",
   "additionalProperties": false,
   "description": "This is the Generic Schema which validates the structure of the file",
@@ -1549,10 +1546,10 @@
           "const": "InformationSet",
           "type": "string"
         },
-        "Designation": {
-          "const": "VOC",
-          "type": "string"
-          "oneOf": [
+          "Designation": {
+            "const": "VOC",
+            "type": "string",
+            "oneOf": [
             {
               "type": "string",
               "const": "VOC"
@@ -1640,45 +1637,6 @@
     },
     "VDA277.RawDataArrayValue": {
       "description": "An array value type for storing VDA 277 test results.",
-      "description": "An array specification for storing VDA 278 test results.",
-      "const": [
-          {
-            "Property": "Retention time",
-            "Unit": "min"
-          },
-          {
-            "Property": "Substance name"
-          },
-          {
-            "Property": "Legacy substance"
-          },
-          {
-            "Property": "Mass fragments"
-          },
-          {
-            "Property": "Main mass fragment"
-          },
-          {
-            "Property": "Potential substance match"
-          },
-          {
-            "Property": "CAS registry number"
-          },
-          {
-            "Property": "Area",
-            "Unit": "%"
-          },
-          {
-            "Property": "Emission",
-            "Unit": "µg/g"
-          },
-          {
-            "Property": "Remark"
-          }
-      ]
-    },
-    "VDA277.RawDataArrayValue": {
-      "description": "An array value type for storing VDA 278 test results.",
       "prefixItems": [
         {
           "type": "number",
@@ -2120,8 +2078,6 @@
             "Type": "VDA",
             "Number": "277",
             "IssueDate": "2017-02"
-            "Number": "278",
-            "IssueDate": "2016-05"
           }
         },
         "Index": {
